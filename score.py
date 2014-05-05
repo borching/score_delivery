@@ -39,7 +39,7 @@ for i in range(23):
     str = str + ", ".join(toaddrs)
     str = str + """<table style="width:1200px">"""
     s = '[收到請回信確認] 線性代數 4/23 課堂作業批改結果 (組員:'+wks.cell(3+i,4).value+','+wks.cell(3+i,7).value+','+wks.cell(3+i,10).value+',本次得分'+wks.cell(3+i,2).value+')'
-    for j in range(2):
+    for j in range(79):
         print(j);
         str=str+"<tr><td>"+(wks.cell(1,j+1).value or " ")+"</td><td>"+(wks.cell(3+i,j+1).value or " ")+"</td><td>"+(wks.cell(2,j+1).value or " ")+"</td></tr>"
     str = str + "</table></body></html>"
@@ -47,7 +47,7 @@ for i in range(23):
     msg['Subject'] = s
 
 #測試信箱
-    toaddrs = ['borching@gmail.com']
+#    toaddrs = ['borching@gmail.com']
        
 #設定寄件資訊
     smtpserver.sendmail(fromaddr, toaddrs, msg.as_string())
