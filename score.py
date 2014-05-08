@@ -31,7 +31,7 @@ smtpserver.login(gmail_user, gmail_pwd)
 #寄件人資訊
 fromaddr = "borching@gmail.com"
 
-for i in range(1):
+for i in userRange:
 #組員信箱    
     x=int(wks.cell(3+i,3).value)
     if x==3:
@@ -44,8 +44,9 @@ for i in range(1):
     str = "<html><head><style>table, th, td{border-collapse:collapse;border:1px solid black;}th,td{padding:15px;}</style></head><body>To:"
     str = str + ", ".join(toaddrs)
     str = str + """<table style="width:1200px">"""
-    s = '[收到請不用回信確認] 線性代數 4/30 課堂作業批改結果 (組員:'+wks.cell(3+i,4).value+','+wks.cell(3+i,7).value+','+wks.cell(3+i,10).value+',本次得分'+wks.cell(3+i,2).value+')'
-    for j in range(70):
+    s = mailTitle
+    s = s + '(組員:'+wks.cell(3+i,4).value+','+wks.cell(3+i,7).value+','+wks.cell(3+i,10).value+',本次得分'+wks.cell(3+i,2).value+')'
+    for j in cellRange:
         print(j);
         str=str+"<tr><td>"+(wks.cell(1,j+1).value or " ")+"</td><td>"+(wks.cell(3+i,j+1).value or " ")+"</td><td>"+(wks.cell(2,j+1).value or " ")+"</td></tr>"
     str = str + "</table></body></html>"
