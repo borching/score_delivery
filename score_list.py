@@ -2,10 +2,15 @@ import smtplib
 from email.mime.text import MIMEText
 import gspread
 
+# In your local directory, create a key.py, containing the following things
+# user = 'yourGmailAccount' 
+# password = 'yourGmailPassword'
+
+from key import *		
 
 #寄件人的信箱
-gmail_user = 'user'
-gmail_pwd = 'passwd'
+gmail_user = user
+gmail_pwd = password
 address = '@ntu.edu.tw'
 gc = gspread.login(gmail_user,gmail_pwd)
 
