@@ -25,7 +25,7 @@ smtpserver.login(gmail_user, gmail_pwd)
 #寄件人資訊
 fromaddr = "borching@gmail.com"
 
-for i in range(2,4):
+for i in range(71):
 #學生信箱    
     sid = wks.cell(2 + i, 4).value;
     name = wks.cell(2 + i, 5).value;
@@ -50,7 +50,7 @@ for i in range(2,4):
     print(" ")
 
 #測試信箱
-    toaddrs = ['borching@gmail.com']
+#    toaddrs = ['borching@gmail.com']
        
 #設定寄件資訊
     smtpserver.sendmail(fromaddr, toaddrs, msg.as_string())
