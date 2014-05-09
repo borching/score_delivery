@@ -15,4 +15,17 @@ mailFirstSentence = mailFirstSentence + "<BR> 歡迎提供此自動信件之改�
 mailFirstSentence = mailFirstSentence + "假如你對寫程式有興趣，願意幫忙把此自動信件變得更好的話，請直接與老師聯絡。<BR>"
 userRange = range(24)
 cellRange = range(83)
-test = 0
+test = 1
+
+# score list
+worksheet = "102-2線代成績"
+mailTitle = "[102-2線性代數] 課堂作業歷次成績核對(至 5/7 止)"
+sendMode = 2		# score list
+mailFirstSentence = "<BR> 以下為系統記錄之歷次課堂練習分數統計，若有問題請洽老師。小考與期中考之成績請見助教之公告（不在此列中）。<BR>"
+mailFirstSentence = mailFirstSentence + "目前統計Week3 ~ Week10 (扣掉Week5(春假), Week6(期中考前複習)) 共６週之成績。<BR>"
+mailFirstSentence = mailFirstSentence + "Week 8以前每週成績=(2/3)*Wed+(1/3)*Thr; Week9以後每週成績 = 1 * Wed.<BR>"
+mailFirstSentence = mailFirstSentence + "預計至期末將有１２週之成績。平時成績計算以１２次中取８次最高的成績之平均作計算。<BR>"
+userRange = range(20)
+cellRange = range(24)
+test = 1
+
