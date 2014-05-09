@@ -25,7 +25,9 @@ mailFirstSentence = "<BR> 以下為系統記錄之歷次課堂練習分數統計
 mailFirstSentence = mailFirstSentence + "目前統計Week3 ~ Week10 (扣掉Week5(春假), Week6(期中考前複習)) 共６週之成績。<BR>"
 mailFirstSentence = mailFirstSentence + "Week 8以前每週成績=(2/3)*Wed+(1/3)*Thr; Week9以後每週成績 = 1 * Wed.<BR>"
 mailFirstSentence = mailFirstSentence + "預計至期末將有１２週之成績。平時成績計算以１２次中取８次最高的成績之平均作計算。<BR>"
-userRange = range(20)
+mailFirstSentence = mailFirstSentence + "<BR> 歡迎提供此自動信件之改善意見。我將視大家的需求與自己時間許可盡量更新。<BR>"
+mailFirstSentence = mailFirstSentence + "假如你對寫程式有興趣，願意幫忙把此自動信件變得更好的話，請直接與老師聯絡。<BR>"
+userRange = range(72)
 cellRange = range(24)
-test = 1
+test = 0
 
