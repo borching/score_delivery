@@ -12,3 +12,5 @@ as an email to the designated group (or students).
 
 The app reads param.py as a parameter file, in which some parameters, such as spreadsheet name, email title, etc., 
 can be set up.
+
+This app uses gspread (https://github.com/burnash/gspread) for accessing a google spreadsheet.
